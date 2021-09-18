@@ -10,9 +10,9 @@ body {
 	width:  100%;
 }
 
-/*1st section*/
+/*=====================================================1st section===========================================*/
 .header{
-	background-image: url("images/xbg_3.png");
+	background-image: url("../images/xbg_3.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -81,16 +81,15 @@ li a {
 	margin-bottom: 50px;
 }
 .appointment-btn{
-	padding: 25px;
-	background: rgb(7, 121, 228);
-	text-decoration: none;
-	color: white;
-	border-radius: 34px;
-}
+		padding: 25px;
+		background: rgb(7, 121, 228);
+		text-decoration: none;
+		color: white;
+		border-radius: 34px;
+	}
 /*2nd section*/
 .section2{
 	margin: 0px 150px;
-	max-width: 80%;
 }
 .section2-row{
 	display: flex;
@@ -126,32 +125,15 @@ li a {
 	border-radius: 34px;
 }
 
-/*3rd section*/
-.image-box {
-	margin-top: -4px;
-  position: relative;
-}
-.image-box-background,
-.image-box-overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-.image-box-background {
-  background: var(--image-url) center center no-repeat;
-  background-size: cover;
+/*=============================================================3rd section=======================================*/
 
-  z-index: 1
-}
-.image-box-overlay {
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 2;
+.image-box-background {
+  background-image: url('../images/xbg_2.png');
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(128,128,128,0.4);
+  margin-top: -5px;
 }
 .image-box-content {
-  position: relative;
-  z-index: 3;
   color: white;
   text-align: center;
   padding: 250px 0px;
@@ -224,10 +206,10 @@ li a {
 	color: white;
 	box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.2);
 }
-/*5th section*/
+/*============================================================5th section===========================================*/
 .fifth-section{
 	width: 100%;
-	background-image: url(images/xbg_3.png);
+	background-image: url(../images/xbg_3.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*simple thing to add background overlay*/
@@ -273,7 +255,7 @@ li a {
 .grid-item p{
 	color: white;
 }
-/*sixth section*/
+/*========================================================sixth section===========================================*/
 
 #sixth{
 	width: 100%;
@@ -334,7 +316,7 @@ li a {
 /* =============================================================seventh section=================================================*/
 .seventh-section{
 	width: 100%;
-	background-image: url(images/xbg_3.png);
+	background-image: url(../images/xbg_3.png);
 	background-size: cover;
 	/*simple thing to add background overlay*/
 	box-shadow: inset 0 0 0 1000px rgba(7,121,228,0.7);
@@ -474,7 +456,7 @@ form{
 /*===============================================footer========================================================*/
 .footer{
 	width: 100%;
-	background-image: url(images/footer.jpg);
+	background-image: url(../images/footer.jpg);
 	padding: 40px 0px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -522,45 +504,8 @@ footer>p{
 
 
 @media only screen and (max-width: 768px) {
-	/*========================================================4th section========================================================*/
-	#fourth{
-		padding: 36px 24px;
-	}
-	.fourth-row{
-		flex-direction: column;
-	}
-	.img-card{
-		flex-basis: auto;
-	}
-	#fourth>h1{
-		font-size: 30px;
-	}
-	#fourth>p{
-		text-align: center;
-		color: slategrey;
-		margin: 24px 0px;
-	}
-	.img-card>h1{
-		font-size: 25px;
-		margin: 20px 0px;
-	}
-	.img-card>h3{
-		color: rgb(7, 121, 228);
-		letter-spacing: 2px;
-	}
-	.img-card>p{
-		margin: 20px 0px;
-		padding: 0 50px;
-		color: slategrey;
-	}
-	.img-card>a{
-		padding: 15px;
-		background: rgb(7, 121, 228);
-		text-decoration: none;
-		border-radius: 34px;
-		color: white;
-		box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.2);
-	}
+
+
 	/*================================================================footer===========================================================*/
 .footer{
 	padding: 20px 0px;;
@@ -632,5 +577,301 @@ footer>p{
 }
 
 
+/* =============================================================seventh section=================================================*/
+.seventh-section>p{
+		font-size: 11px;
+		padding: 50px 0px 0px 0px;
+}
+.seventh-section>h1{
+		font-size: 25px;
+}
+#testmonial1{
+	display: none;
+}
+#testmonial3{
+	display: none;
+}
+
+.seventh-row{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.testmonial{
+	flex-basis: 100%;
+	padding: 50px 0px;
+}
+.testmonial>img{
+	width: 50%;
+}
+.testmonial>p{
+	padding: 10px
+}
+.pagination{
+	padding: 0px 0px 40px 0px;
+}
+.pagination .dot {
+  height: 12px;
+  width: 12px;
+}
+
+/*========================================================sixth section===========================================*/
+
+#sixth{
+	padding: 50px 25px;
+}
+.sixth-row{
+	margin: 10px 0px;
+
+}
+.img-card2{
+	flex-basis: 100%;
+	flex-direction: column;
+  display: flex;
+  margin: 10px 0px;
+}
+
+#sixth>h1{
+	font-size: 25px;
+}
+#sixth>p{
+	font-size: 14px;
+	margin: 20px 0px;
+}
+.img-card2>h1{
+	font-size: 20px;
+	margin: 5px 0px;
+}
+.img-card2>h3{
+	margin: 10px 0px;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+.img-card2>p{
+	margin: 10px 0px;
+	font-size: 14px;
+}
+.img-card2>a{
+	padding: 10px;
+	width: 30%;
+	text-align: center;
+	font-size: 14px;
+}
+
+/*============================================================5th section===========================================*/
+.fifth-row{
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0px 0px 0px;
+}
+.fifth-left{
+	flex-basis: 100%;
+	padding: 0px 0px 0px 0px;
+}
+.fifth-right{
+	flex-basis: 100%;
+}
+.fifth-left p{
+	font-size: 14px;
+}
+.fifth-left h1{
+	font-size: 25px;
+
+	margin: 10px 0px 40px 0px;
+}
+.grid-container {
+  display: block;
+  padding: 40px 0px 40px 0px;
+
+}
+.grid-item {
+	border-left: none !important;
+	border-right: none !important;
+  padding: 20px 100px 20px 100px;
+}
+.grid-item h1{
+	font-size: 25px;
+}
+.grid-item p{
+	font-size: 14px;
+}
+
+	/*========================================================4th section========================================================*/
+	#fourth{
+		padding: 36px 24px;
+		margin: 40px 0px;
+	}
+	.fourth-row{
+		flex-direction: column;
+	}
+	.img-card{
+		flex-basis: auto;
+		margin: 10px 0px;
+	}
+	#fourth>h1{
+		font-size: 25px;
+	}
+	#fourth>p{
+		font-size: 14px;
+		margin: 24px 0px;
+	}
+	.img-card>h1{
+		font-size: 20px;
+		margin: 10px 0px;
+	}
+	.img-card>h3{
+		font-size: 17px;
+	}
+	.img-card>p{
+		margin: 20px 0px;
+	}
+	.img-card>a{
+		padding: 12px;
+	}
+
+/*=============================================================3rd section=======================================*/
+
+.image-box-background {
+  background-image: url('../images/xbg_2.png');
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(128,128,128,0.4);
+  margin-top: -5px;
+}
+.image-box-content {
+  padding: 70px 20px;
+}
+.image-box-content h1{
+	font-size: 30px;
+}
+.image-box-content p{
+	margin: 20px 0px;
+	font-size: 14px;
+}
+.search-place{
+	font-size: 14px;
+	padding: 10px 20px;
+}
+
+/*===================================================================2nd section============================*/
+
+.section2{
+	margin: 0px 0px;
+}
+.section2-row{
+	display: flex;
+	flex-direction: column;
+}
+.section2-left-col{
+	flex-basis: 100%;
+	
+}
+.section2-left-col img{
+  width:100%;
+  height:500px;
+}
+.section2-right-col{
+	flex-basis: 100%;
+}
+.section2-right-col div{
+	padding: 50px 20px;
+}
+.section2-right-col div>h1,h1>span{
+	font-size: 25px;
+}
+.section2-right-col p{
+	font-size: 14px;
+	margin: 20px 0px 40px 0px;
+}
+.contact-btn{
+	padding: 20px 125px;
+	font-size: 14px;
+	text-align: center;
+}
+.appointment-btn{
+		padding: 20px 100px;
+		font-size: 14px;
+		text-align: center;
+	}
+	.section2-right-col div>a{
+		display: block;
+		margin: 10px 0px;
+	}
+
+/*=====================================================1st section===========================================*/
+
+.header{
+	background-position: center;
+}
+.topbar{
+	display: none;
+}
+.main-navbar{
+	background: black;
+    padding: 10px;	
+}
+
+.menu li{
+	margin: 10px 10px;
+}
+li a {
+	display: none;
+}
+.logo h1{
+	font-size: 30px;
+    margin-left: 0px;
+    color: white;
+}
+.nav-btn{
+	display: none;
+}
+
+.menu-button {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+
+
+/*after nav*/
+
+
+.welcome-note{
+	width: 100%;
+	padding: 100px 20px;
+}
+.welcome-note h2{
+	letter-spacing: 1px;
+}
+.welcome-note h1{
+	font-size: 30px;
+	margin: 10px 0px;
+}
+.welcome-note p{
+	font-size: 14px;
+	margin-bottom: 30px;
+}
 
 }

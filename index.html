@@ -4,8 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<title></title>
+	<style>
+
+</style>
 </head>
 <body>
 <div class="header">
@@ -15,12 +18,18 @@
 		<p>SINGUP | SIGN IN</p>
 	</div>
 	<nav class="main-navbar">
+
 			<div class="logo">
 				<h1>Mediplus</h1>
 			</div>
 			<div class="menu">
 				<ul>
-				<li><a href="#">Home</a></li>
+				<div class="menu-button" onclick="myFunction(this)">
+						  <div class="bar1"></div>
+						  <div class="bar2"></div>
+						  <div class="bar3"></div>
+				</div>
+				<li class="menu-item"><a href="#">Home</a></li>
 				<li><a href="#">About us</a></li>
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">Doctors</a></li>
@@ -61,16 +70,13 @@
 
 	</div>
 </div>
-<div class="image-box">
-  <div class="image-box-background" style="--image-url: url('images/xbg_2.png')">
-  </div>
-  <div class="image-box-overlay"></div> 
-  <div class="image-box-content">
-    <h1>Your Health is Our Priorty</h1>
-    <p>We can Manage your Dreams bulding A small river named Duden flows by thier place</p>
-    <a class="search-place" href="#">Search Places</a>
-  </div>
-</div>
+  <div class="image-box-background">
+	  <div class="image-box-content">
+	    <h1>Your Health is Our Priorty</h1>
+	    <p>We can Manage your Dreams bulding A small river named Duden flows by thier place</p>
+	    <a class="search-place" href="#">Search Places</a>
+	  </div>
+	</div>
 <section id="fourth">
 	<h1>Our Qualified Doctors</h1>
 	<p>Seperated they live in a small river, called Duden it is the most havenestic place in the  with the necessarily negergia<br>
@@ -200,19 +206,19 @@
 		<p>read testomonials</p>
 		<h1>Our Pateient Says</h1>
 		<div class="seventh-row">
-			<div class="testmonial">
+			<div class="testmonial" id="testmonial1">
 				<img src="images/xperson_3.jpg.jpeg">
 				<p>Far far away, behind the world mountains, far from the counties Vokalia and consonantia, there live the blind texts</p>
 				<p style="font-size: 21px;">Jeff Freshman</p>
 				<p>PATIENT</p>
 			</div>
-			<div class="testmonial">
+			<div class="testmonial" id="testmonial2">
 				<img src="images/xperson_4.png">
 				<p>Far far away, behind the world mountains, far from the counties Vokalia and consonantia, there live the blind texts</p>
 				<p style="font-size: 21px;">Klere Megerfils</p>
 				<p>PATIENT</p>
 			</div>
-			<div class="testmonial">
+			<div class="testmonial" id="testmonial3">
 				<img src="images/xperson_3.jpg.jpeg">
 				<p>Far far away, behind the world mountains, far from the counties Vokalia and consonantia, there live the blind texts</p>
 				<p style="font-size: 21px;">Jeff Morgue</p>
@@ -279,7 +285,7 @@
 			</div>
 		</div>
 </section>
-
+ 
 
 <div class="footer">
 	<footer>
@@ -324,6 +330,15 @@
 		<p>Copyright&copy; 2021 All Rights Reserved | This template is made by <span style="color: blue;">Umer Butt<span></p>
 	</footer>
 </div>
+
+
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+
+}
+</script>
 
 </body>
 </html>
