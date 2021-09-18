@@ -10,6 +10,9 @@ body {
 	width:  100%;
 }
 
+.mob-section{
+	display: none;
+}
 /*=====================================================1st section===========================================*/
 .header{
 	background-image: url("../images/xbg_3.png");
@@ -874,4 +877,27 @@ li a {
 	margin-bottom: 30px;
 }
 
+
+
+.mob-section{
+	display: inline-block;
+	background: rgb(245,245,245);
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 60px;
+}
+.mob-section p{
+	font-size: 14px;
+	padding: 20px 0px;
+}
+.mob-section div{
+	border-bottom: 1px solid;
+	border-color: lightgray;
+}
+.fa-stethoscope{
+	padding: 10px 0px;
+	color: rgb(7, 121, 228);
+	font-size: 40px;
+}
 }
