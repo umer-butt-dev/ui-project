@@ -87,7 +87,7 @@ li a {
 	margin-bottom: 50px;
 }
 .appointment-btn{
-		padding: 25px;
+		padding: 23px;
 		background: rgb(7, 121, 228);
 		text-decoration: none;
 		color: white;
@@ -107,8 +107,8 @@ li a {
 }
 .section2-left-col img{
 	object-fit:fill;
-  width:700px;
-  height:900px;
+  width:100%;
+  height:100%;
 }
 .section2-right-col{
 	flex-basis: 60%;
@@ -117,7 +117,7 @@ li a {
 	padding: 300px 130px;
 }
 .section2-right-col div>h1,h1>span{
-	font-size: 50px;
+	font-size: 40px;
 }
 .section2-right-col p{
 	color: slategrey;
@@ -137,7 +137,6 @@ li a {
   background-image: url('../images/xbg_2.png');
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(128,128,128,0.4);
-  margin-top: -5px;
 }
 .image-box-content {
   color: white;
@@ -404,7 +403,7 @@ li a {
 	background: white;
 	padding: 30px 30px;
 	border-radius: 100px;
-	margin: 0px 155px;
+	margin: 0px 80px;
 }
 .contact-card h3{
 	font-size: 20px;
@@ -425,7 +424,8 @@ li a {
 	flex-basis: 50%;
 }
 .eight-right-col .form{
-	margin: 100px 100px 100px;
+	margin: 100px 0px;
+	padding: 50px;
 }
 form{
 	display: flex;
@@ -434,7 +434,7 @@ form{
 
 .form input{
 	height: 60px;
-	width: auto;
+	width: 80%;
 	border-radius: 5px;
 	margin-bottom: 30px;
 	border: 1px solid;
@@ -443,7 +443,7 @@ form{
 }
 .form textarea{
 		height: 200px;
-		width: auto;
+		width: 80%;
 		border-radius: 5px;
 		border-color: lightgray;
 		margin-bottom: 30px;
@@ -557,8 +557,91 @@ footer>p{
 
 
 
+@media only screen and (max-width: 1336px) {
 
 
+.main-navbar{
+    padding: 10px;
+}
+.logo{
+	width: 30%;
+}
+.menu{
+	width: 70%;
+}
+.menu li{
+	margin: 10px 15px;
+}
+li a {
+	font-size: 20px;
+}
+.logo h1{
+	font-size: 30px;
+    margin-left: 50px;
+}
+.nav-btn{
+	padding: 15px;
+}
+.welcome-note{
+	padding: 50px 10px;
+}
+.welcome-note h1{
+	font-size: 50px;
+}
+.appointment-btn{
+		padding: 23px;
+		background: rgb(7, 121, 228);
+		text-decoration: none;
+		color: white;
+		border-radius: 34px;
+	}
+
+.grid-container {
+  grid-template-columns:none;
+  padding: 100px 40px 180px 15px;
+
+}
+
+.g-map{
+	width: 100%;
+	height: 900px;
+}
+.contact-card{
+	flex-basis: 22%;
+	text-align: center;
+	background: rgb(245,245,245);
+	padding: 30px 0px 80px 0px;
+}
+.contact-card .contact-icon{
+	background: white;
+	padding: 15px 15px;
+	border-radius: 100px;
+	margin: 0px 0px;
+}
+.contact-card h3{
+	font-size: 20px;
+	padding: 40px 0;
+}
+
+.eight-right-col .form{
+	margin: 80px 0px;
+	padding: 30px;
+}
+.section2-right-col div{
+	padding: 200px 20px;
+}
+}
+@media only screen and (max-width: 942px) {
+	.section2-right-col div{
+	padding: 120px 20px;
+}
+.contact-btn{
+	display: block;
+	margin-top: 40px;
+	padding: 20px 0px;
+	text-align: center;
+}
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -845,7 +928,7 @@ footer>p{
 	text-align: center;
 }
 .appointment-btn{
-		padding: 20px 100px;
+		padding: 19px 100px;
 		font-size: 14px;
 		text-align: center;
 	}
