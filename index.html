@@ -18,17 +18,17 @@
 		<p>SINGUP | SIGN IN</p>
 	</div>
 	<nav class="main-navbar">
-
-			<div class="logo">
+		<div class="logo">
 				<h1>Mediplus</h1>
 			</div>
-			<div class="menu">
-				<ul>
-				<div class="menu-button" onclick="myFunction(this)">
+			<div class="menu-button toggle-button" onclick="myFunction(this)">
 						  <div class="bar1"></div>
 						  <div class="bar2"></div>
 						  <div class="bar3"></div>
 				</div>
+			
+			<div class="menu navbar-links">
+				<ul>
 				<li class="menu-item"><a href="#">Home</a></li>
 				<li><a href="#">About us</a></li>
 				<li><a href="#">Contact</a></li>
@@ -378,8 +378,13 @@
 <script>
 function myFunction(x) {
   x.classList.toggle("change");
-
 }
+   const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active')
+})
 </script>
 
 </body>
